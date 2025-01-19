@@ -9,20 +9,20 @@ const Navbar = () => {
   return (
     <nav className="bg-black sticky top-0 z-50">
       <div className="md:container md:mx-auto px-5 xl:p-0 flex justify-between">
-        <div className="flex items-center cursor-pointer text-[#e5e5e5] py-5 gap-10 ">
-          <img src={logo} className="w-24 h-auto" alt="" />
-          <ul className="hidden md:flex gap-5 text-sm ">
-            <li>Home</li>
-            <li>Series</li>
-            <li>Movie</li>
-            <li>New and Popular</li>
-            <li>My List</li>
+        <div className="flex items-center text-[#e5e5e5] py-5 gap-10 ">
+          <img src={logo} className="w-24 h-auto cursor-pointer" alt="" />
+          <ul className="hidden md:flex gap-5 text-sm cursor-pointer ">
+            <li className="hover:text-red-600 transform duration-300">Home</li>
+            <li className="hover:text-red-600 transform duration-300">Series</li>
+            <li className="hover:text-red-600 transform duration-300">Movie</li>
+            <li className="hover:text-red-600 transform duration-300">New and Popular</li>
+            <li className="hover:text-red-600 transform duration-300">My List</li>
           </ul>
         </div>
-        <div className="flex items-center gap-5 cursor-pointer">
-          <img className="w-5 h-auto" src={search_icon} alt="" />
-          <img className="w-5 h-auto" src={bell_icon} alt="" />
-          <div onClick={() => setOpenModal(!openModal)} className="flex gap-2 relative">
+        <div className="flex items-center gap-5 ">
+          <img className="w-5 h-auto cursor-pointer" src={search_icon} alt="" />
+          <img className="w-5 h-auto cursor-pointer" src={bell_icon} alt="" />
+          <div onClick={() => setOpenModal(!openModal)} className="flex gap-2 relative cursor-pointer">
             <img
               
               className="w-8 rounded h-8"
